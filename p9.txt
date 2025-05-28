@@ -1,0 +1,4 @@
+sudo apt install zaproxy
+zaproxy
+https://juice-shop.herokuapp.com
+

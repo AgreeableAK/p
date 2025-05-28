@@ -1,0 +1,15 @@
+netdiscover
+nmap -A
+ftp <ip>
+ls
+get backup
+exit
+
+cat backup
+
+john pass.txt
+
+if password already cracked
+
+cd /home/kali/.john
+cat john.pot

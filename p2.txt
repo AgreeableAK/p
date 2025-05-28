@@ -1,0 +1,4 @@
+nikto -h http://127.0.0.1/DVWA/
+
+http://127.0.0.1/DVWA/config/
+http://127.0.0.1/DVWA/tests/

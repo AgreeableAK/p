@@ -1,0 +1,5 @@
+ifconfig
+nmap -sn 
+nmap -sS -sV -O
+amass enum -d hackerone.com
+example.com

