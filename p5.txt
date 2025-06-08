@@ -1,0 +1,5 @@
+http://testphp.vulnweb.com/
+http://testphp.vulnweb.com/search.php?test=query
+zaproxy
+
+http://testphp.vulnweb.com/search.php?test=%27%22%3CscrIpt%3Ealert%281%29%3B%3C%2FscRipt%3E
